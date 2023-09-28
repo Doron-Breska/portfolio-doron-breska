@@ -43,7 +43,9 @@ const AboutMe = () => {
 
         <img
           className="about-me-pic"
-          src="./src/assets/Doron2.jpg"
+          src={
+            "https://res.cloudinary.com/danq3q4qv/image/upload/v1695931381/Doron_2_bqckut.jpg"
+          }
           alt="Profile-pic-Doron"
         />
       </div>
