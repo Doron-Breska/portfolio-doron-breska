@@ -53,7 +53,7 @@ function App() {
       </section>
       <section id="projects">
         <p className="empty">empty</p>
-        <h1 className="global-header">03. Projects</h1>
+        <h1 className="global-header">Projects</h1>
         <div className="flex-container">
           {fetchedProjects.map((project) => {
             return (

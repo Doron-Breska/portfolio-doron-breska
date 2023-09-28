@@ -24,6 +24,7 @@ background-color: rgb(241, 246, 251);
   width: 100vw;
   padding: 1rem 0.5rem;
   margin-top: 0;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -44,10 +45,17 @@ background-color: rgb(241, 246, 251);
 
 video {
   width: 100vw;
-  height: calc(9 / 17 * 100vw);
+  height: calc(9 / 17 * 105vw);
   object-fit: cover;
   object-position: center;
   /* margin-top: 48px; */
+}
+
+.section-wrap{
+  /* border: 2px solid black; */
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 /* ///   project ///// */
 .project-div {
@@ -62,8 +70,8 @@ video {
 
 .hovered {
   background-color: #030202;
-  opacity: 0.3;
-  transition: all 0.2s linear;
+  opacity: 0.2;
+  transition: all 0.15s linear;
 }
 
 .flex-container {
@@ -99,32 +107,49 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   display: none;
+  
   /* By default, it won't be displayed */
 }
 
 .test:hover .links {
   display: block;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
 }
 
 .links a {
   margin-inline: 0.5rem;
+  font-size: 1rem;
 }
 
 .about-me-pic{
-  width: 350px;
-  height: calc(9 / 11 * 350px)
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid rgb(229, 240, 251);
+}
+.about-text{
+  font-size:1.2rem ;
+  line-height: 1.6rem;
+}
+
+.about-skills-pic{
+display: flex;
+justify-content: space-around;
+margin-top: 3rem;
+}
+
+ul , .about-me-pic{
+  display: inline-block;
+  margin-inline: 1rem;
 }
 
 .global-header {
-  /* padding: 30px; */
-  margin: 50px;
-  text-align: left;
-  font-weight: bolder;
+  text-align: center;
   font-size: 2rem;
-  margin-left: 150px;
-  /* margin-top: 75px; */
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  margin-top:7rem;
+  margin-bottom: 4rem;
+  /* margin-top: 3rem; */
 }
 
 .empty {
@@ -132,8 +157,8 @@ video {
 }
 
 .project-div a {
-  font-size: 5rem;
-  color: RGB(0, 154, 103);
+  font-size: 4rem;
+  color:rgb(0, 126, 195);
 }
 
 .project-div a:nth-of-type(1) {
@@ -146,31 +171,25 @@ video {
   margin-left: 2rem;
 }
 
-@media only screen and (max-width: 930px) {
-  .global-header {
-    margin-left: 50px;
-  }
 
-  .project-div a {
-    font-size: 3rem;
 
-  }
+@media only screen and (max-width: 775px) {
+.about-skills-pic{
+  flex-direction: column;
+  align-items: center;
+}
+.about-me-pic{
+  margin-top: 3rem;
 }
 
-@media only screen and (max-width: 450px) {
-
-
-  .project-div a {
-    font-size: 2.5rem;
-
-  }
 }
+
 
 @media only screen and (max-width: 400px) {
 
 
   .project-div a {
-    font-size: 2rem;
+    font-size: 3rem;
 
   }
 }

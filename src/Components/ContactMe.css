@@ -1,5 +1,5 @@
 .contact {
-    margin: 8rem 50px;
+    margin-block: 8rem ;
     text-align: center;
 }
 
@@ -16,7 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 50%;
+    max-width: 800px;
 }
 
 .contact__content h1 {
@@ -49,9 +49,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .contact__content {
-        max-width: 70%;
-    }
+   
 
     .con-link {
         color: gray;
@@ -59,10 +57,9 @@
     }
 
     .con-link:hover {
-        color: rgb(0, 154, 103);
+        color: var(--cute-blue);
         font-size: 1.3rem;
         transform: translateY(-5px);
-        /* Add this line to ensure hover effect */
     }
 
     .contact__question {

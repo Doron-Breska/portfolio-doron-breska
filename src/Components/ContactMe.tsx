@@ -8,7 +8,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const ContactMe = () => {
   return (
     <>
-      <h1 className="global-header">04. Contact</h1>
+      <h1 className="global-header">Contact</h1>
       <p className="contact__text-1">
         I'm currently looking for new opportunities, my inbox is always open.
         <br />

@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { BsGithub } from "react-icons/bs";
+import { FaGlobe } from "react-icons/fa";
 
 type ProjectProps = {
   name: string;
@@ -30,11 +29,11 @@ const Project: React.FC<ProjectProps> = ({ name, github, pic, tech, url }) => {
         />
         <div className="links">
           <a href={github}>
-            <FontAwesomeIcon icon={faGithub} beat />
+            <BsGithub />
           </a>
           {url !== "" && (
             <a href={url}>
-              <FontAwesomeIcon icon={faGlobe} beat />
+              <FaGlobe />
             </a>
           )}
         </div>
