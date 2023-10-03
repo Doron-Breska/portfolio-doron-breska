@@ -8,8 +8,6 @@
 
 
 body {
-  /* background-color: rgb(255, 251, 245); */
-/* background-color:rgb(235, 243, 251); */
 background-color: rgb(241, 246, 251);
   color: var(--cute-blue);
   display: block;
@@ -31,12 +29,14 @@ background-color: rgb(241, 246, 251);
 #navbar a {
   color: #f2f2f2;
   text-align: center;
-  padding: 14px;
+  padding: 10px 14px;
   text-decoration: none;
+  border-radius: 17px;
 }
 
 #navbar a:hover {
   text-decoration: underline;
+  background-color: rgb(105, 123, 183);
 }
 
 #navbar .active-link {
@@ -48,11 +48,9 @@ video {
   height: calc(9 / 17 * 105vw);
   object-fit: cover;
   object-position: center;
-  /* margin-top: 48px; */
 }
 
 .section-wrap{
-  /* border: 2px solid black; */
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
