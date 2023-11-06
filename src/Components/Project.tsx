@@ -9,6 +9,7 @@ type ProjectProps = {
   pic: string;
   tech: string;
   url: string;
+  num: number;
 };
 
 const Project: React.FC<ProjectProps> = ({ name, github, pic, tech, url }) => {
@@ -40,7 +41,7 @@ const Project: React.FC<ProjectProps> = ({ name, github, pic, tech, url }) => {
       </div>
       <h3>{name}</h3>
       <p>Technologies:</p>
-      <p>{tech}</p>
+      <p className="technologies">{tech}</p>
     </div>
   );
 };

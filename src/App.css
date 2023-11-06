@@ -31,12 +31,12 @@ background-color: rgb(241, 246, 251);
   text-align: center;
   padding: 10px 14px;
   text-decoration: none;
-  border-radius: 17px;
+  /* border-radius: 17px; */
 }
 
 #navbar a:hover {
   text-decoration: underline;
-  background-color: rgb(105, 123, 183);
+  /* background-color: rgb(105, 123, 183); */
 }
 
 #navbar .active-link {
@@ -71,7 +71,10 @@ video {
   opacity: 0.2;
   transition: all 0.15s linear;
 }
-
+.technologies{
+  margin-inline: 1rem;
+  line-height: 1.5rem;
+}
 .flex-container {
   margin: 0 auto;
   padding-block: 2rem;

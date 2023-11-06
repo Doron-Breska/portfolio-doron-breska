@@ -15,6 +15,7 @@ type Pro = {
   github: string;
   url: string;
   pic: string;
+  num: number;
 };
 
 function App() {
@@ -55,18 +56,21 @@ function App() {
         <p className="empty">empty</p>
         <h1 className="global-header">Projects</h1>
         <div className="flex-container">
-          {fetchedProjects.map((project) => {
-            return (
-              <Project
-                key={project.id}
-                name={project.name}
-                github={project.github}
-                pic={project.pic}
-                tech={project.technologies}
-                url={project.url}
-              />
-            );
-          })}
+          {fetchedProjects
+            .sort((a, b) => b.num - a.num)
+            .map((project) => {
+              return (
+                <Project
+                  key={project.id}
+                  name={project.name}
+                  github={project.github}
+                  pic={project.pic}
+                  tech={project.technologies}
+                  url={project.url}
+                  num={project.num}
+                />
+              );
+            })}
         </div>
       </section>
       <section id="contact" style={{}}>
