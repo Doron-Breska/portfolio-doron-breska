@@ -35,32 +35,40 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
-/* ///   project ///// */
+
+.flex-container {
+display: grid;
+gap: 3rem; 
+grid-auto-flow: column;
+grid-auto-columns: 29%;
+overflow-x: auto;
+overscroll-behavior-inline: contain;
+padding: 2rem 3rem 3rem;
+}
+
+
 .project-div {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 1.5rem;
   background-color: white;
-  max-width: 25rem;
   border: 0.5px solid  rgb(195, 221, 247);
   border-radius: 2px;
   text-align: center;
-  overflow: hidden;
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  padding-bottom: 0.8rem;
+}
+.project-div > img { 
+  inline-size: 100%;
+  aspect-ratio: 19 / 9 ;
+
 }
 
 
-.flex-container {
-  margin: 0 auto;
-  padding-block: 2rem;
-  width: 80%;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 50px;
-  column-gap: 50px;
-  justify-content: center;
-  margin-top: 3rem;
-  /* border: 2px solid black; */
-}
 
-.project-div h3, p {
+
+
+ p {
   margin-block: 1.2rem;
 }
 
@@ -108,12 +116,6 @@ body {
   text-align: center;
   margin-top: 4rem;
 }
-
-
-
-
-
-
 
 
 
@@ -171,4 +173,62 @@ ul {
   display:inline-block;
   font-size: 1.2rem;
   font-weight: 300;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+.flex-container {
+    gap: 2rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 35%;
+    padding: 2rem 2rem 2rem;
+  }
+
+.project-div {
+
+  gap: 1rem;
+  padding-bottom: 0.8rem;
+}
+
+}
+
+@media screen and (max-width: 750px) {
+
+  .flex-container {
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 43%;
+    padding: 2rem 1rem 1rem;
+  }
+
+  .project-div {
+
+    gap: 0.8rem;
+    padding-bottom: 0.5rem;
+  }
+     .con-link {
+       color: gray;
+       font-size: 0.8rem;
+       transition: all 0.2s linear;
+       margin: 1rem;
+     }
+
+}
+@media screen and (max-width: 555px) {
+
+  .flex-container {
+    gap: 0.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 59%;
+    padding: 2rem 0.5rem 0.5rem;
+  }
+
+  .project-div {
+
+    gap: 0.5rem;
+    padding-bottom: 0.2rem;
+  }
+ 
+
 }
