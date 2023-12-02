@@ -1,20 +1,25 @@
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 const AboutMe = () => {
   return (
     <div className="section-wrap">
-      <p className="empty" id="aboutMe">
-        empty
+      <h1 className="global-header">Portfolio</h1>
+      <p>
+        <FontAwesomeIcon
+          icon={faMoon}
+          size="2xl"
+          style={{ color: "#00134b" }}
+        />
       </p>
-      <h1 className="global-header">About</h1>
       <p className="about-text">Hey! I'm Doron Breska.</p>
       <p className="about-text">
         As a junior full-stack web developer, I merge my passion for design and
-        coding to create cohesive web solutions.
-        <br /> I graduated from Code Academy Berlin, where I honed my skills in
-        transforming ideas into functional and visually appealing applications.
-        <br />
-        Beyond coding, I highly value collaboration and continuous learning,
-        ensuring every project benefits from the latest innovations in web
-        development.
+        coding to create cohesive web solutions. I graduated from Code Academy
+        Berlin, where I honed my skills in transforming ideas into functional
+        and visually appealing applications. Beyond coding, I highly value
+        collaboration and continuous learning, ensuring every project benefits
+        from the latest innovations in web development.
       </p>
       <p className="about-text">
         Here are the technologies I've been working with:

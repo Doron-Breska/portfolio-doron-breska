@@ -1,6 +1,6 @@
-import { useState } from "react";
-import { BsGithub } from "react-icons/bs";
-import { FaGlobe } from "react-icons/fa";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type ProjectProps = {
   name: string;
@@ -13,35 +13,35 @@ type ProjectProps = {
 };
 
 const Project: React.FC<ProjectProps> = ({ name, github, pic, tech, url }) => {
-  const [hovered, setHovered] = useState(false);
-
   return (
-    <div
-      className="project-div"
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-    >
-      <div className="test">
-        <img
-          className={hovered ? "project-pic-div hovered" : "project-pic-div"}
-          style={{ width: "100%" }}
-          src={pic}
-          alt="project-screenshot"
-        />
-        <div className="links">
-          <a href={github}>
-            <BsGithub />
-          </a>
-          {url !== "" && (
-            <a href={url}>
-              <FaGlobe />
-            </a>
-          )}
-        </div>
-      </div>
+    <div className="project-div" style={{ color: " rgb(0, 19, 75)" }}>
+      <img
+        className="project-pic-div"
+        style={{ width: "100%" }}
+        src={pic}
+        alt="project-screenshot"
+      />
+
       <h3>{name}</h3>
-      <p>Technologies:</p>
       <p className="technologies">{tech}</p>
+      <a
+        className="con-link"
+        href={github}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FontAwesomeIcon className="faIcon" icon={faGithub} size="2xl" />
+      </a>
+      {url !== "" && (
+        <a
+          className="con-link"
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FontAwesomeIcon icon={faGlobe} size="2xl" />
+        </a>
+      )}
     </div>
   );
 };
