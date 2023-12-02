@@ -15,12 +15,7 @@ type ProjectProps = {
 const Project: React.FC<ProjectProps> = ({ name, github, pic, tech, url }) => {
   return (
     <div className="project-div" style={{ color: " rgb(0, 19, 75)" }}>
-      <img
-        className="project-pic-div"
-        // style={{ width: "100%" }}
-        src={pic}
-        alt="project-screenshot"
-      />
+      <img className="project-pic-div" src={pic} alt="project-screenshot" />
 
       <h3 style={{ marginInline: "0.3rem" }}>{name}</h3>
       <div style={{ lineHeight: "1.3rem", marginInline: "0.3rem" }}>{tech}</div>
