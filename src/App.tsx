@@ -70,7 +70,7 @@ function App() {
             )}
 
             <button>
-              <a href="/CV.pdf" download="DORON_BRESKA_CV.pdf">
+              <a href="/CV.pdf" download="Doron_Breska_CV.pdf">
                 Resume
               </a>
             </button>
