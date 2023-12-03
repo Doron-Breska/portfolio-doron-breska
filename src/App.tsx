@@ -46,13 +46,7 @@ function App() {
   return (
     <div className={darkMode ? "dark" : "light"}>
       <div className="section-wrap">
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
+        <div className="header-con">
           <h2 className="global-header">Portfolio</h2>
           <div>
             {darkMode ? (

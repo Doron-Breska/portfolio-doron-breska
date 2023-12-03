@@ -35,6 +35,11 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+.header-con{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .flex-container {
 display: grid;
@@ -108,7 +113,7 @@ padding: 2rem 3rem 3rem;
 
 .global-header {
   font-size: 2rem;
-  margin-top:3.8rem;
+  margin-top:3rem;
   margin-bottom: 4rem;
  font-family: 'Comfortaa', sans-serif;
 }
