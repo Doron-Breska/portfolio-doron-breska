@@ -37,8 +37,9 @@ body {
 }
 .header-con{
   display: flex;
+  padding-top: 2.5rem;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .flex-container {
@@ -113,7 +114,6 @@ padding: 2rem 3rem 3rem;
 
 .global-header {
   font-size: 2rem;
-  margin-top:3rem;
   margin-bottom: 4rem;
  font-family: 'Comfortaa', sans-serif;
 }
