@@ -153,7 +153,7 @@ function App() {
         <p className="about-text">
           These are the projects I have made so far. I aim to learn a new tool
           in every new project and gain more experience in what I have learned
-          before. In this way, I strive to constantly expand my skill set.
+          before. In this way, I am constantly expanding my skill set.
         </p>
       </div>
 
