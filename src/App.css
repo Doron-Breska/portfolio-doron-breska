@@ -41,6 +41,11 @@ body {
   justify-content: space-between;
   align-items: flex-start;
 }
+.header-con2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .flex-container {
 display: grid;

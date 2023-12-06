@@ -48,7 +48,7 @@ function App() {
       <div className="section-wrap">
         <div className="header-con">
           <h2 className="global-header">Portfolio</h2>
-          <div>
+          <div className="header-con2">
             {darkMode ? (
               <FontAwesomeIcon
                 icon={faSun}
